@@ -17,4 +17,9 @@ function seven_improved_form_devel_execute_form_alter(&$form, FormStateInterface
   // Add an extra class to the form so that the textarea field inherits
   // monospace font.
   $form['#attributes']['class'][] = 'monospace-textarea';
+  // Add an extra class to the form so we can remove the left margin on primary
+  // buttons.
+  $form['#attributes']['class'][] = 'primary-buttons-remove-left-margin';
+  // Make the "Execute" button primary.
+  $form['execute']['op']['#attributes']['class'][] = 'button--primary';
 }
