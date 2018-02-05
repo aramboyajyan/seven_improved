@@ -11,5 +11,9 @@
 /*******************************************************************************
  * Various elements
  ******************************************************************************/
+/* Add margins to messages div displayed within views preview wrap. */
+.views-preview-wrapper .messages {
+  margin-left: 17px;
+  margin-right: 9px;
+}
 /* Various elements end */
-
