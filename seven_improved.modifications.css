@@ -25,8 +25,8 @@ form.monospace-textarea textarea {
   font-family: monospace;
   font-size: 1.5em;
 }
-/* Remove left margin on primary buttons in certain forms. */
-form.primary-buttons-remove-left-margin .button--primary {
+/* Remove left margin on all buttons. They anyway have right margin. */
+form .button {
   margin-left: 0;
 }
 /* Various elements end */
