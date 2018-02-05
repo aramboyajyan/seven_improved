@@ -20,4 +20,9 @@
 .preview-submit-wrapper .arguments-preview.button {
   margin-left: 1em;
 }
+/* Forms with monospace textareas. */
+form.monospace-textarea textarea {
+  font-family: monospace;
+  font-size: 1.5em;
+}
 /* Various elements end */

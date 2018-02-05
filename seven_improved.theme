@@ -7,3 +7,14 @@
  * Created by: Topsitemakers
  * http://www.topsitemakers.com/
  */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function seven_improved_form_devel_execute_form_alter(&$form, FormStateInterface $form_state) {
+  // Add an extra class to the form so that the textarea field inherits
+  // monospace font.
+  $form['#attributes']['class'][] = 'monospace-textarea';
+}
