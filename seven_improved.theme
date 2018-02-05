@@ -23,3 +23,11 @@ function seven_improved_form_devel_execute_form_alter(&$form, FormStateInterface
   // Make the "Execute" button primary.
   $form['execute']['op']['#attributes']['class'][] = 'button--primary';
 }
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function seven_improved_form_rules_expression_edit_alter(&$form, FormStateInterface $form_state) {
+  // Add primary class to the "Save" button.
+  $form['save']['#attributes']['class'][] = 'button--primary';
+}
