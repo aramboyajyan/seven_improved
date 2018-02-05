@@ -16,4 +16,8 @@
   margin-left: 17px;
   margin-right: 9px;
 }
+/* Space the "Update preview" button on view edit page. */
+.preview-submit-wrapper .arguments-preview.button {
+  margin-left: 1em;
+}
 /* Various elements end */
