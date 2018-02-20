@@ -47,5 +47,13 @@ form .button {
     margin: 10px 0 0 0;
     padding: 0;
   }
+  /* Override the width of "number" input fields. */
+  form .form-item input[type="number"] {
+    width: 100%;
+  }
+  /* Space the field for storing the cardinality in "Allowed number of values" */
+  .form-item-cardinality-number input[type="number"] {
+    margin-top: 0.5em;
+  }
 }
 /* Various elements end */
