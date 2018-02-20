@@ -29,8 +29,8 @@ form.monospace-textarea textarea {
 form .button {
   margin-left: 0;
 }
-/* Make all form elements 100% wide on small screens. */
 @media screen and (max-width: 600px) {
+  /* Make all form elements 100% wide on small screens. */
   form .form-item {
     width: 100%;
     margin: 0 0 0.5em 0;
@@ -40,6 +40,12 @@ form .button {
     float: left;
     width: 100%;
     margin-top: 0.75em;
+  }
+  /* Space the "Delete" and other "danger" buttons in form actions. */
+  form .form-actions .button.button--danger {
+    display: block;
+    margin: 10px 0 0 0;
+    padding: 0;
   }
 }
 /* Various elements end */
