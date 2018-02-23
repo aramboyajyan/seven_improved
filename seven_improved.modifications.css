@@ -56,4 +56,8 @@ form .button {
     margin-top: 0.5em;
   }
 }
+/* Remove top margin on first form item in a UI modal. */
+.ui-dialog form .form-item:first-child {
+  margin-top: 0;
+}
 /* Various elements end */
