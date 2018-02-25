@@ -11,6 +11,9 @@
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Entity\EntityFormInterface;
 
+/**
+ * Implements hook_form_alter().
+ */
 function seven_improved_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if ($form_state->getFormObject() instanceof EntityFormInterface) {
     $entity_type = $form_state->getFormObject()->getEntity()->getEntityTypeId();
